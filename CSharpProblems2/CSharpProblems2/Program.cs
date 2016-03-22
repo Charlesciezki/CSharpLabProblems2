@@ -10,6 +10,13 @@ namespace CSharpProblems2
     {
         static void Main(string[] args)
         {
+            bool isrunning = true;
+            while (isrunning)
+            {
+                UserInputChecker userInputListChecker = new UserInputChecker();
+                userInputListChecker.checkAgainstList();
+            }
+
         }
     }
 }
