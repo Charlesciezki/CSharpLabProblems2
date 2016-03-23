@@ -11,19 +11,19 @@ namespace CSharpProblems2
     {
         static void Main(string[] args)
         {
-            //bool isrunning = true;
-            //while (isrunning)
-            //{
-            //    UserInputChecker userInputListChecker = new UserInputChecker();
-            //    userInputListChecker.checkAgainstList();
-            //}
+
+            UserInputChecker userInputListChecker = new UserInputChecker();
+            userInputListChecker.checkAgainstList();
+
 
             ShapeMaker shapes = new ShapeMaker(5);
             shapes.PrintOutForward();
             shapes.PrintOutUpSideDown();
             shapes.PrintOutBackWard();
 
-            Fibbonacci Fibb = new Fibbonacci(40);
+            Console.WriteLine("Enter a number you'd like to Fibb to...");
+            double userInput = Convert.ToDouble(Console.ReadLine());
+            Fibbonacci Fibb = new Fibbonacci(userInput);
 
             TakeMeToYouTube youTube = new TakeMeToYouTube();
             Console.ReadLine();

@@ -9,17 +9,20 @@ namespace CSharpProblems2
 {
     class Fibbonacci
     {
-        public Fibbonacci(int number)
+        List<double> FibbList = new List<double>(); 
+        public Fibbonacci(double number)
         {
-            int first;
-            int second;
-            int third;
+            FibbList.Add(number);
+            FibbList.Add(number);
 
-            for (first = 0, second = 1, third = 0; third <= number; third = first + second)
+            for (int i = 1; i < 50; i++)
             {
-                first = second;
-                second = third;
-                Console.WriteLine(second + " ");
+                double newNumber = FibbList[i] + FibbList[i - 1];
+                FibbList.Add(newNumber);
+            }
+            foreach (var temp in FibbList)
+            {
+                Console.WriteLine(temp);
             }
         }
 
