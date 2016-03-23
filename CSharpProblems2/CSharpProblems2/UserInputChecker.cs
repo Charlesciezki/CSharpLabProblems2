@@ -39,6 +39,11 @@ namespace CSharpProblems2
                 {
                     userInputList.Add(userInput);
                 }
+                else if (userInputList[index] == userInput)
+                {
+                    break;
+                }
+
             }
         }
         

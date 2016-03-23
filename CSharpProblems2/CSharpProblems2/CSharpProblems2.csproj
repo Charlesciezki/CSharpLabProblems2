@@ -43,9 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Fibbonacci.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ShapeMaker.cs" />
+    <Compile Include="TakeMeToYouTube.cs" />
     <Compile Include="UserInputChecker.cs" />
   </ItemGroup>
   <ItemGroup>
